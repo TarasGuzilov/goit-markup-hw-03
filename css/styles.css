@@ -1,0 +1,194 @@
+:root {
+  --background-color: #ffffff;
+  --active-link-color: #2196f3;
+  --title-text-color: #212121;
+  --text-color: #757575;
+}
+/* Teg's styles */
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-color);
+}
+button {
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h2 h3 {
+  color: var(--title-text-color);
+}
+footer {
+  background-color: #2f303a;
+}
+
+/* Logotype */
+.header-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.web {
+  color: var(--active-link-color);
+}
+
+/* Navigation */
+.nav-link:hover,
+.contact-link:hover,
+.nav-link:focus,
+.contact-link:focus {
+  color: var(--active-link-color);
+}
+.nav-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.current-link {
+  color: var(--active-link-color);
+}
+.contact-link {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Heading */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 900;
+  line-height: 1.36;
+  font-size: 44px;
+}
+.hero-button {
+  background-color: var(--active-link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero-button-text {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+}
+
+/* Features section */
+.features-headings {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-text {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* What we are doing section */
+.webstudio-h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Our team section */
+.our-team {
+  background-color: #f5f4fa;
+}
+.name-of-staff-member {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.proffesion {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Filters section */
+.filter-button {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+}
+.filter-button:focus,
+.filter-button:hover {
+  background-color: var(--active-link-color);
+  color: #ffffff;
+}
+.filter-project-name {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.filter-project-type {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+.footer-logo {
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.footer-address {
+  font-style: normal;
+}
+.address {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--active-link-color);
+}
