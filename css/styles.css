@@ -17,13 +17,33 @@ a {
   text-decoration: none;
   color: inherit;
 }
-h2 h3 {
+h2,
+h3 {
   color: var(--title-text-color);
 }
 footer {
   background-color: #2f303a;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+
+  outline: 1px solid red;
+}
 /* Logotype */
 .header-logo {
   font-family: Raleway, sans-serif;
@@ -64,46 +84,54 @@ footer {
 /* Heading */
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  margin-bottom: 94px;
 }
 .hero-title {
   text-transform: uppercase;
-  text-align: center;
   color: #ffffff;
   font-weight: 900;
   line-height: 1.36;
   font-size: 44px;
+  margin: 0 auto 30px auto;
+  width: 696px;
 }
 .hero-button {
   background-color: var(--active-link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   border: none;
+
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  padding: 10px 32px;
+  margin-bottom: 200px;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.hero-button-text {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-}
 
 /* Features section */
+.features-list {
+}
 .features-headings {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .features-text {
   color: var(--text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 94px;
 }
 
 /* What we are doing section */
@@ -113,11 +141,24 @@ footer {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.what-we-are-doing-list {
+  margin-bottom: 94px;
 }
 
 /* Our team section */
 .our-team {
   background-color: #f5f4fa;
+}
+.info-about-member {
+  margin-bottom: 94px;
+  padding-bottom: 30px;
+
+  outline: 1px solid tomato;
+}
+.info-about-member > img {
+  margin-bottom: 30px;
 }
 .name-of-staff-member {
   color: var(--title-text-color);
@@ -126,6 +167,7 @@ footer {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .proffesion {
   color: var(--text-color);
@@ -136,6 +178,9 @@ footer {
 }
 
 /* Filters section */
+.filter-buttons {
+  margin-bottom: 34px;
+}
 .filter-button {
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -159,6 +204,7 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .filter-project-type {
   color: var(--text-color);
@@ -168,13 +214,18 @@ footer {
 }
 
 /* Footer */
+footer {
+  padding: 60px 0;
+}
 .footer-logo {
+  display: inline-block;
   color: #ffffff;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 .footer-address {
   font-style: normal;
