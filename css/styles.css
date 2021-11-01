@@ -63,23 +63,50 @@ ul {
 .contact-link:focus {
   color: var(--active-link-color);
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.site-nav-item + .site-nav-item {
+  margin-left: 50px;
+}
 .current-link {
   color: var(--active-link-color);
 }
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav-item + .auth-nav-item {
+  margin-left: 50px;
+}
 .contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 
 /* Heading */
 .hero {
