@@ -35,6 +35,9 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+img {
+  display: block;
+}
 
 .container {
   margin-left: auto;
@@ -111,7 +114,6 @@ ul {
 /* Heading */
 .hero {
   padding-top: 200px;
-  margin-bottom: 94px;
 
   background-color: #2f303a;
   text-align: center;
@@ -145,6 +147,11 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* About us section */
+.about-us-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Features section */
 .features-section {
   margin-bottom: 94px;
@@ -187,9 +194,6 @@ margin-left: 30px;
 .what-we-are-doing-list {
   display: flex;
 }
-.what-we-are-doing-list-item {
-  margin-bottom: 94px;
-}
 .what-we-are-doing-list-item + .what-we-are-doing-list-item {
   margin-left: 30px;
 }
@@ -197,12 +201,21 @@ margin-left: 30px;
 /* Our team section */
 .our-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-team-list {
+  display: flex;
 }
 .info-about-member {
-  margin-bottom: 94px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  outline: 1px solid tomato;
+  background-color: #ffffff;
+}
+.info-about-member + .info-about-member {
+  margin-left: 30px;
 }
 .info-about-member > img {
   margin-bottom: 30px;
@@ -245,19 +258,49 @@ margin-left: 30px;
   background-color: var(--active-link-color);
   color: #ffffff;
 }
+.filter-info {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: tomato;
+}
+.filter-info :not(:nth-child(3n)){
+  margin-right: 30px;
+}
+.filter-info :not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+.filter-info-item {
+  width: 370px;
+  padding-bottom: 20px;
+ }
+ /* .filter-info-link {
+   display: block;
+   margin: 0px;
+   padding: 0px;
+ } */
+.filter-info-image {
+  margin-bottom: 20px;
+}
 .filter-project-name {
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-bottom: 4px;
+  
+
+  background-color: teal;
 }
 .filter-project-type {
   color: var(--text-color);
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
+
+  background-color: yellow;
 }
 
 /* Footer */
@@ -278,12 +321,18 @@ footer {
   font-style: normal;
 }
 .address {
+  display: block;
+  margin-bottom: 0px;
+
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .footer-link {
+  display: block;
+  margin-top: 9px;
+
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-link:hover,
