@@ -99,7 +99,7 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  
+
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
@@ -110,31 +110,34 @@ ul {
 
 /* Heading */
 .hero {
+  padding-top: 200px;
+  margin-bottom: 94px;
+
   background-color: #2f303a;
   text-align: center;
-  margin-bottom: 94px;
 }
 .hero-title {
+  margin: 0 auto 30px auto;
+
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 900;
   line-height: 1.36;
   font-size: 44px;
-  margin: 0 auto 30px auto;
   width: 696px;
 }
 .hero-button {
-  background-color: var(--active-link-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 32px;
+  margin-bottom: 200px;
   border-radius: 4px;
   border: none;
+  background-color: var(--active-link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  padding: 10px 32px;
-  margin-bottom: 200px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -143,35 +146,52 @@ ul {
 }
 
 /* Features section */
+.features-section {
+  margin-bottom: 94px;
+}
 .features-list {
+  display: flex;
+}
+.features-list-item {
+  width: 270px;
+}
+.features-list-item + .features-list-item {
+margin-left: 30px;
 }
 .features-headings {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 .features-text {
   color: var(--text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 94px;
 }
 
 /* What we are doing section */
 .webstudio-h2 {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 .what-we-are-doing-list {
+  display: flex;
+}
+.what-we-are-doing-list-item {
   margin-bottom: 94px;
+}
+.what-we-are-doing-list-item + .what-we-are-doing-list-item {
+  margin-left: 30px;
 }
 
 /* Our team section */
