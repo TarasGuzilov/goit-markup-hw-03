@@ -44,8 +44,6 @@ img {
   margin-right: auto;
   width: 1200px;
   padding: 0 15px;
-
-  outline: 1px solid red;
 }
 /* Logotype */
 .header-logo {
@@ -238,8 +236,17 @@ margin-left: 30px;
 }
 
 /* Filters section */
+.filters-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .filter-buttons {
+  display: flex;
+  justify-content: center;
   margin-bottom: 34px;
+}
+.filter-buttons-item + .filter-buttons-item {
+  margin-left: 8px;
 }
 .filter-button {
   background-color: #f5f4fa;
@@ -261,8 +268,6 @@ margin-left: 30px;
 .filter-info {
   display: flex;
   flex-wrap: wrap;
-
-  background-color: tomato;
 }
 .filter-info :not(:nth-child(3n)){
   margin-right: 30px;
@@ -274,33 +279,29 @@ margin-left: 30px;
   width: 370px;
   padding-bottom: 20px;
  }
- /* .filter-info-link {
-   display: block;
-   margin: 0px;
-   padding: 0px;
- } */
+ .filter-info-title {
+   padding-left: 24px;
+   margin-right: 0px;
+ }
+
 .filter-info-image {
   margin-bottom: 20px;
 }
 .filter-project-name {
   margin-bottom: 4px;
+  width: 322px;
 
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  
-
-  background-color: teal;
 }
 .filter-project-type {
   color: var(--text-color);
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-
-  background-color: yellow;
 }
 
 /* Footer */
