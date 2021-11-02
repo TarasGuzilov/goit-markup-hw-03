@@ -5,6 +5,9 @@
   --text-color: #757575;
 }
 /* Teg's styles */
+header {
+  border-bottom: 1px #ECECEC;
+}
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--background-color);
@@ -112,6 +115,7 @@ img {
 /* Heading */
 .hero {
   padding-top: 200px;
+  padding-bottom: 200px;
 
   background-color: #2f303a;
   text-align: center;
@@ -128,7 +132,6 @@ img {
 }
 .hero-button {
   padding: 10px 32px;
-  margin-bottom: 200px;
   border-radius: 4px;
   border: none;
   background-color: var(--active-link-color);
